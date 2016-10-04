@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <div>
+      <h1>Short Names</h1>
+      <ul>
+         <% short_names.each do |name| %>
+         <li>
+        <%= name %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+
+
+    <div>
+      <h1>Sentence</h1>
+        <ul>
+           <% sentence_array.each do |word| %>
+           <li>
+          <%= word %>
+          </li>
+          <% end %>
+        </ul>
+    </div>
+
+
+    <div>
+      <h1> Movies with budgets of less than 100 million:</h1>
+
+      <ul>
+         <% low_budget.each do |low| %>
+         <li>
+        <%= low %>
+        </li>
+        <% end %>
+      </ul>
+
+      <h1> Movies with Leo my hero:</h1>
+
+      <ul>
+         <% leo.each do |star| %>
+         <li>
+        <%= star %>
+        </li>
+        <% end %>
+      </ul>
+
+
+
+    </div>
+
+
+  </body>
+</html>
